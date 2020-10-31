@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>CurrencyConverter</title>
+  <link rel="stylesheet" type="text/css" href="converter.css">
+  <link rel="shortcut icon" type="image/png" href="curr.png">
+  <meta charset="utf-8">
+</head>
+<body>
+
+
+    <div class="head">
+        <h1>  CURRENCY CONVERTER </h1>
+    </div>
+
+  <div class="selectcur">
+     <h2 class="SE"> Select Currency </h2>
+    <select class="cselect" id="inputCurrency" name="currency" onchange="firstToSecond()" onclick="firstToSecond()" oninput="firstToSecond()">
+       <option value="taka">Bangladeshi Taka (BDT)</option>
+       <option value="usd">United State Dollar (USD)</option>
+       <option value="euro">Euro</option>
+       <option value="gbp">Pound Sterling (GBP)</option>
+       <option value="aud">Australian Dollar (AUD)</option>
+       <option value="cad">Canadian Dollar (CAD)</option>
+    </select>
+    <br>
+ <br>
+ <div class="input">
+   <input type="number" id="firstCurrency" onchange="firstToSecond()" oninput="firstToSecond()">
+ </div>
+</div>
+
+  <div class="convertcur">
+    <h2 class="SE"> Converted Currency </h2>
+
+    <div>
+      <select class="cselect" id="OutputCurrency" name="currency" onchange="firstToSecond()" onclick="firstToSecond()" oninput="firstToSecond()">
+       <option value="taka1">Bangladeshi Taka (BDT)</option>
+       <option value="usd1">United State Dollar (USD)</option>
+       <option value="euro1">Euro</option>
+       <option value="gbp1">Pound Sterling (GBP)</option>
+       <option value="aud1">Australian Dollar (AUD)</option>
+       <option value="cad1">Canadian Dollar (CAD)</option>
+    </select>
+  </div>
+  <br>
+    <div class="input">
+       <input type="number" id="SecondCurrency"  onchange="firstToSecond()" oninput="firstToSecond()">
+     </div>
+
+  </div>
+
+
+
+
+<div class="footer">
+    <p id="shows"></p>
+          <script>
+          var myShows = ['"EVERY ENDING IS A NEW BEGINNING"', '"Be yourself,everyone else is already taken"', '"Always forgive your enemies, nothing annoys them so much"', '"Memory is a wonderful thing,if you dont have too deal with the past"', '"Everyone has their own destiny"'];
+          document.getElementById('shows').innerHTML = myShows[Math.floor(Math.random() * myShows.length)];
+          </script>
+
+  </div>
+
+  <div class="end">
+    <br>
+          <p class="sa">Sadia Islam</p>
+          <p>Copyright © 2020 Sadia Islam</p>
+          </div>
+
+  <script src="converter.js"> </script>
+
+</body>
+
+</html>
